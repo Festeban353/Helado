@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloformulario.css">
+    
+    
+    <title> Iniciar Sesion </title>
+</head>
+<body>
+    <h2> Iniciar Sesion </h2>
+    <form id="FormularioAcceso" action="/iniciar_sesion" method="post">
+
+    
+    <div class = "campo1">
+        <label for = "correo"> Correo: </label>
+        <input type = "text" id = "correo" name = "correo" required>
+    </div>
+
+    <div class = "campo2">
+        <label for = "contraseña"> Contraseña: </label>
+        <input type= "password"   id = "contraseña" name = "contraseña" required>
+    </div>
+
+  
+    <div class="campo3">
+        <button type ="submit"> Iniciar Sesion </button>
+    </div>
+
+    <div class="campo4">
+        <a href="Registro.html"> No tiene usuario? Registrece</a>
+    </div>
+    </form>
+    <script src="js/login.js"></script> 
+
+</body>
+</html>

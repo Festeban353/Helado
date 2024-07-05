@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloformulario.css">
+    <title>Registrarse </title>
+</head>
+<body>
+    <h2> Registro de Usuario: </h2>
+
+    <form id="formulario-registro" action="/guardar_usuarios" method="post">
+    
+        <div>
+            <label for="nombreusuario">Nombre Usuario:</label>
+            <input type="text" id="nombreusuario" name="nombreusuario" required>
+        </div>
+
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="text" id="contraseña" name="contraseña" required>
+            </select>
+        </div>
+
+        <div>
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo" required>
+        </div>
+
+
+
+        <label for="rol">Rol:</label>
+        <select id="rol" name="rol" required>
+            <option value="1">Administrador</option>
+            <option value="2">Usuario</option>
+        </select>
+        
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
